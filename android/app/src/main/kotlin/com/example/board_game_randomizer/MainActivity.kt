@@ -1,4 +1,4 @@
-package com.example.board_game_randomizer
+package com.board_game_randomizer.app
 
 import io.flutter.embedding.android.FlutterActivity
 

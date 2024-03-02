@@ -10,13 +10,18 @@
 * res arcana
 * cascadia
 
-## Create launch icons
+## Developer
+
+### Build
+
+`flutter build appbundle`
+
+### Create launch icons
 
 `flutter pub run flutter_launcher_icons`
 
 ## Roadmap
 
-* fix keyboard issue on click (remove)
 * Icon for board game (from bgg)
 * Request new games
 * favorites

@@ -9,8 +9,8 @@ class ResArcana extends GameData {
 
   @override
   List<Expansions> expansions() => [
-        Expansions(id: 1, name: "Lux et Tenebrae", game: id),
-        Expansions(id: 2, name: "Perlae Imperii", game: id)
+        Expansions(id: 0, name: "Lux et Tenebrae", game: id),
+        Expansions(id: 0, name: "Perlae Imperii", game: id)
       ];
 
   @override
@@ -112,7 +112,7 @@ class Cascadia extends GameData {
 
   @override
   List<Expansions> expansions() => [
-        Expansions(id: 3, name: "Kickstarter", game: id),
+        Expansions(id: 0, name: "Kickstarter", game: id),
       ];
 
   @override
@@ -142,30 +142,30 @@ class Cascadia extends GameData {
             name: "Bear: Equal Groups",
             game: id,
             grouping: "Bear",
-            expansion: "kickstarter"),
+            expansion: "Kickstarter"),
         const Options(
             id: 0,
             name: "Elk: Oriented Pairs",
             game: id,
             grouping: "Elk",
-            expansion: "kickstarter"),
+            expansion: "Kickstarter"),
         const Options(
             id: 0,
             name: "Salmon: Gathering",
             game: id,
             grouping: "Salmon",
-            expansion: "kickstarter"),
+            expansion: "Kickstarter"),
         const Options(
             id: 0,
             name: "Hawk: On the Edge",
             game: id,
             grouping: "Hawk",
-            expansion: "kickstarter"),
+            expansion: "Kickstarter"),
         const Options(
             id: 0,
             name: "Fox: Nearby Diversity",
             game: id,
             grouping: "Fox",
-            expansion: "kickstarter"),
+            expansion: "Kickstarter"),
       ];
 }

@@ -92,7 +92,7 @@ class _MainState extends State<Main> {
     await db.execute(
         "CREATE TABLE Expansions (id INTEGER PRIMARY KEY autoincrement, name TEXT, game INTEGER,FOREIGN KEY (game) REFERENCES Games (id)  )");
     await db.execute(
-        "CREATE TABLE Options (id INTEGER PRIMARY KEY autoincrement, name TEXT, game INTEGER,grouping INTEGER, expansion INTEGER, depends TEXT,imageUrl TEXT, FOREIGN KEY (game) REFERENCES Games (id),FOREIGN KEY (expansion) REFERENCES Expansions (id)   )");
+        "CREATE TABLE Options (id INTEGER PRIMARY KEY autoincrement, name TEXT, game INTEGER,grouping INTEGER, expansion TEXT, depends TEXT,imageUrl TEXT, FOREIGN KEY (game) REFERENCES Games (id))");
 
     // Populate data
     for (var d in data) {
@@ -182,6 +182,7 @@ class _MainState extends State<Main> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
+      resizeToAvoidBottomInset: false,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
@@ -198,7 +199,9 @@ class _MainState extends State<Main> {
                 setState(() {
                   expansions = expansions;
                   selectedGame = game;
+                  options = [];
                 });
+                FocusManager.instance.primaryFocus?.unfocus();
               }
             },
             dropdownMenuEntries:
