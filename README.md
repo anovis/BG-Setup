@@ -7,8 +7,9 @@
 
 ## Supported games
 
-* res arcana
-* cascadia
+* Cascadia
+* Res Arcana
+* Wingspan
 
 ## Developer
 
@@ -22,7 +23,6 @@
 
 ## Roadmap
 
-* Icon for board game (from bgg)
 * Request new games
 * favorites
 * ingest custom games

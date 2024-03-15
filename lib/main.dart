@@ -47,8 +47,9 @@ class _MainState extends State<Main> {
   Games? selectedGame;
   List<Games> games = [];
   List<Expansions> expansions = [];
-  List<GameData> data = [ResArcana(), Cascadia()];
+  List<GameData> data = [Cascadia(), ResArcana(), Wingspan()];
   List<Options> options = [];
+  bool baseChecked = true;
 
   @override
   void initState() {
@@ -126,11 +127,13 @@ class _MainState extends State<Main> {
     var db = await openDatabase(path);
 
     List<Options> options = [];
-    var resp = await db.rawQuery(
-        'SELECT * FROM "Options" where game = ? and expansion IS NULL',
-        [selectedGame!.id]);
-    for (var o in resp) {
-      options.add(Options.fromMap(o));
+    if (baseChecked) {
+      var resp = await db.rawQuery(
+          'SELECT * FROM "Options" where game = ? and expansion IS NULL',
+          [selectedGame!.id]);
+      for (var o in resp) {
+        options.add(Options.fromMap(o));
+      }
     }
     // get expansions
     for (var e in expansions) {
@@ -166,7 +169,10 @@ class _MainState extends State<Main> {
     options.shuffle();
     List<Options> randomized = [];
     Set<String> randmizedNames = {};
-    while (randomized.length <= count) {
+    while (randomized.length <= count - 1) {
+      if (options.isEmpty) {
+        return [];
+      }
       var option = options.removeAt(0);
       if (option.depends == null || !randmizedNames.contains(option.depends)) {
         randomized.add(option);
@@ -206,9 +212,24 @@ class _MainState extends State<Main> {
             },
             dropdownMenuEntries:
                 games.map<DropdownMenuEntry<Games>>((Games game) {
-              return DropdownMenuEntry<Games>(value: game, label: game.name);
+              return DropdownMenuEntry<Games>(
+                  value: game,
+                  label: game.name,
+                  leadingIcon: Image(
+                      height: 30,
+                      width: 30,
+                      image:
+                          AssetImage('assets/bgg_images/${game.name}.jpeg')));
             }).toList(),
           )),
+          CheckboxListTile(
+              value: baseChecked,
+              onChanged: (bool? value) {
+                setState(() {
+                  baseChecked = !baseChecked;
+                });
+              },
+              title: const Text("Base")),
           expansions.isNotEmpty
               ? Center(
                   child: Column(
@@ -236,6 +257,10 @@ class _MainState extends State<Main> {
           ElevatedButton(
             onPressed: () async {
               options = await _getOptions();
+              if (mounted && options.isEmpty) {
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                    content: Text('Not enough options selected')));
+              }
               setState(() {
                 options = options;
               });
