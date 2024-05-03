@@ -180,7 +180,7 @@ class Wingspan extends GameData {
   List<Expansions> expansions() => [
         Expansions(id: 0, name: "Europe", game: id),
         Expansions(id: 0, name: "Oceania", game: id),
-        // Expansions(id: 0, name: "Asia", game: id)
+        Expansions(id: 0, name: "Asia", game: id)
       ];
 
   @override
@@ -253,6 +253,8 @@ class Wingspan extends GameData {
             id: 0, name: "Set of Eggs", game: id, depends: "Total Birds"),
         const Options(
             id: 0, name: "Total Birds", game: id, depends: "Set of Eggs"),
+
+        // Europe Expansion
         const Options(
             id: 0,
             name: "Birds with Tucked Cards",
@@ -313,6 +315,8 @@ class Wingspan extends GameData {
             game: id,
             depends: "Brown Powers",
             expansion: "Europe"),
+
+        // Oceania Expansion
         const Options(
             id: 0,
             name: "Cubes in Play a Bird",
@@ -361,12 +365,79 @@ class Wingspan extends GameData {
             game: id,
             depends: "Rodent + Fish Cost",
             expansion: "Oceania"),
+
         // Asia Expansion
-// [duet_token] in any one horizontal row	asia					horizontal rows with at least 1 of your [duet_token]
-// [duet_token] on edge of map	asia					[duet_token] not on edge of map
-// [duet_token] on [bowl] [cavity] [ground] [platform]	asia					[duet_token] on [fish] [fruit] [rodent] [seed] [invertebrate]
-// [duet_token] in [forest]	asia					[duet_token] on pairs of matching symbols
-// [duet_token] in [grassland]	asia					total [duet_token] on map
-// [duet_token] in [wetland]	asia					fewest [duet_token] on bonus spaces
+        const Options(
+            id: 0,
+            name: "Token in any one horizontal row",
+            game: id,
+            depends: "Horizontal rows with at least 1 of your tokens",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Horizontal rows with at least 1 of your tokens",
+            game: id,
+            depends: "Token in any one horizontal row",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token on edge of map",
+            game: id,
+            depends: "Token not on edge of map",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token not on edge of map",
+            game: id,
+            depends: "Token on edge of map",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token on any nest",
+            game: id,
+            depends: "Token on any food",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token on any food",
+            game: id,
+            depends: "Token on any nest",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token in forest",
+            game: id,
+            depends: "Token on pairs of matching symbols",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token on pairs of matching symbols",
+            game: id,
+            depends: "Token in forest",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token in grassland",
+            game: id,
+            depends: "Total tokens on map",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Total tokens on map",
+            game: id,
+            depends: "Token in grassland",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Token in wetland",
+            game: id,
+            depends: "Fewest tokens on bonus spaces",
+            expansion: "Asia"),
+        const Options(
+            id: 0,
+            name: "Fewest tokens on bonus spaces",
+            game: id,
+            depends: "Token in wetland",
+            expansion: "Asia"),
       ];
 }
