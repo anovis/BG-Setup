@@ -113,6 +113,7 @@ class Cascadia extends GameData {
   @override
   List<Expansions> expansions() => [
         Expansions(id: 0, name: "Kickstarter", game: id),
+        Expansions(id: 0, name: "Landmarks", game: id),
       ];
 
   @override
@@ -167,6 +168,21 @@ class Cascadia extends GameData {
             game: id,
             grouping: "Fox",
             expansion: "Kickstarter"),
+        const Options(id: 0, name: "Bear E", game: id, grouping: "Bear"),
+        const Options(id: 0, name: "Bear F", game: id, grouping: "Bear"),
+        const Options(id: 0, name: "Bear G", game: id, grouping: "Bear"),
+        const Options(id: 0, name: "Elk E", game: id, grouping: "Elk"),
+        const Options(id: 0, name: "Elk F", game: id, grouping: "Elk"),
+        const Options(id: 0, name: "Elk G", game: id, grouping: "Elk"),
+        const Options(id: 0, name: "Salmon E", game: id, grouping: "Salmon"),
+        const Options(id: 0, name: "Salmon F", game: id, grouping: "Salmon"),
+        const Options(id: 0, name: "Salmon G", game: id, grouping: "Salmon"),
+        const Options(id: 0, name: "Hawk E", game: id, grouping: "Hawk"),
+        const Options(id: 0, name: "Hawk F", game: id, grouping: "Hawk"),
+        const Options(id: 0, name: "Hawk G", game: id, grouping: "Hawk"),
+        const Options(id: 0, name: "Fox E", game: id, grouping: "Fox"),
+        const Options(id: 0, name: "Fox F", game: id, grouping: "Fox"),
+        const Options(id: 0, name: "Fox G", game: id, grouping: "Fox"),
       ];
 }
 
