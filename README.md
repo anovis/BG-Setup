@@ -8,6 +8,7 @@
 ## Supported games
 
 * Cascadia
+* Cascadia Landmarks
 * Res Arcana
 * Wingspan
 

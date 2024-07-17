@@ -3,22 +3,33 @@ class Games {
   final String name;
   final int count;
   final int grouping;
+  final int? playerScaling;
 
-  const Games(
+  Games(
       {required this.id,
       required this.name,
       required this.count,
-      required this.grouping});
+      required this.grouping,
+      this.playerScaling});
 
   Map<String, dynamic> toMap() {
-    return {'id': id, 'name': name, 'count': count, 'grouping': grouping};
+    return {
+      'id': id,
+      'name': name,
+      'count': count,
+      'grouping': grouping,
+      'playerScaling': playerScaling
+    };
   }
 
   Games.fromMap(Map<String, Object?> map)
       : id = map['id'] as int,
         name = map['name'] as String,
         count = map['count'] as int,
-        grouping = map['grouping'] as int;
+        grouping = map['grouping'] as int,
+        playerScaling = map.containsKey('playerScaling')
+            ? map['playerScaling'] as int?
+            : null;
 }
 
 class Expansions {
@@ -88,7 +99,7 @@ class Options {
 }
 
 class GameData {
-  Games game() => const Games(id: 0, name: "test", count: 0, grouping: 0);
+  Games game() => Games(id: 0, name: "test", count: 0, grouping: 0);
   List<Expansions> expansions() => [];
   List<Options> options() => [];
 }

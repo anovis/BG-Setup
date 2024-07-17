@@ -5,6 +5,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'dart:io';
 import 'dart:math';
+import 'package:numberpicker/numberpicker.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,9 +48,15 @@ class _MainState extends State<Main> {
   Games? selectedGame;
   List<Games> games = [];
   List<Expansions> expansions = [];
-  List<GameData> data = [Cascadia(), ResArcana(), Wingspan()];
+  List<GameData> data = [
+    Cascadia(),
+    ResArcana(),
+    Wingspan(),
+    CascadiaLandmarks()
+  ];
   List<Options> options = [];
   bool baseChecked = true;
+  int _currentPlayerCount = 1;
 
   @override
   void initState() {
@@ -89,7 +96,7 @@ class _MainState extends State<Main> {
   _onCreate(Database db, int version) async {
     // Create the tables
     await db.execute(
-        "CREATE TABLE Games (id INTEGER PRIMARY KEY, name TEXT, count INTEGER, grouping INTEGER)");
+        "CREATE TABLE Games (id INTEGER PRIMARY KEY, name TEXT, count INTEGER, grouping INTEGER, playerScaling INTEGER )");
     await db.execute(
         "CREATE TABLE Expansions (id INTEGER PRIMARY KEY autoincrement, name TEXT, game INTEGER,FOREIGN KEY (game) REFERENCES Games (id)  )");
     await db.execute(
@@ -146,10 +153,15 @@ class _MainState extends State<Main> {
         }
       }
     }
+    var count = selectedGame!.count;
+    if (selectedGame!.playerScaling != null) {
+      count = count + selectedGame!.playerScaling! * _currentPlayerCount;
+    }
+
     if (selectedGame!.grouping == 1) {
-      options = randomizeGroupings(options, selectedGame!.count);
+      options = randomizeGroupings(options, count);
     } else {
-      options = getRandomElements(options, selectedGame!.count);
+      options = getRandomElements(options, count);
     }
 
     return options;
@@ -158,9 +170,11 @@ class _MainState extends State<Main> {
   List<Options> randomizeGroupings(List<Options> options, int count) {
     List<Options> randomized = [];
     Set<String?> categories = options.map((e) => e.grouping).toSet();
+
     for (var cat in categories) {
-      randomized.add(getRandomElement(
-          options.where((element) => element.grouping == cat).toList()));
+      List<Options> categoryOptions =
+          options.where((element) => element.grouping == cat).toList();
+      randomized.addAll(getRandomElements(categoryOptions, count));
     }
     return randomized;
   }
@@ -222,6 +236,26 @@ class _MainState extends State<Main> {
                           AssetImage('assets/bgg_images/${game.name}.jpeg')));
             }).toList(),
           )),
+          selectedGame != null && selectedGame?.playerScaling != null
+              ? const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: Text("Player Count"))
+              : Container(),
+          selectedGame != null && selectedGame?.playerScaling != null
+              ? Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: Center(
+                      child: NumberPicker(
+                    value: _currentPlayerCount,
+                    minValue: 1,
+                    maxValue: 10,
+                    step: 1,
+                    itemHeight: 30,
+                    axis: Axis.horizontal,
+                    onChanged: (value) =>
+                        setState(() => _currentPlayerCount = value),
+                  )))
+              : Container(),
           CheckboxListTile(
               value: baseChecked,
               onChanged: (bool? value) {
@@ -247,11 +281,13 @@ class _MainState extends State<Main> {
               : Container(),
           expansions.isNotEmpty ? const Divider(height: 5) : Container(),
           options.isNotEmpty
-              ? Center(
-                  child: Column(
-                      children: options
-                          .map((Options e) => ListTile(title: Text(e.name)))
-                          .toList()))
+              ? Expanded(
+                  child: Center(
+                      // height: 300,
+                      child: ListView(
+                          children: options
+                              .map((Options e) => ListTile(title: Text(e.name)))
+                              .toList())))
               : Container(),
           const SizedBox(height: 10),
           ElevatedButton(
@@ -267,6 +303,7 @@ class _MainState extends State<Main> {
             },
             child: const Text('Randomize'),
           ),
+          const SizedBox(height: 10),
         ],
       ),
     );
