@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Board Game Randomizer',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(255, 107, 9, 236)),
         useMaterial3: true,
       ),
       home: const Main(),
@@ -217,7 +218,7 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text("Setup Randomizer"),
+          title: const Text("Board Game Setup Randomizer"),
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           actions: <Widget>[
             IconButton(
