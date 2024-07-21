@@ -10,6 +10,7 @@ import 'dart:io';
 import 'dart:math';
 import 'package:numberpicker/numberpicker.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -216,8 +217,24 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      ),
+          title: const Text("Setup Randomizer"),
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.email_outlined),
+              tooltip: 'Send feedback or report issues',
+              onPressed: () {
+                final Uri emailLaunchUri = Uri(
+                    scheme: 'mailto',
+                    path: 'austen.developer@gmail.com',
+                    queryParameters: {
+                      'subject': 'Feedback on Board Game Setup Randomizer'
+                    });
+
+                launchUrlString(emailLaunchUri.toString());
+              },
+            )
+          ]),
       resizeToAvoidBottomInset: false,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
