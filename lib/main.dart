@@ -1,11 +1,15 @@
+import 'dart:ui';
+
 import 'package:board_game_randomizer/data/game_data.dart';
 import 'package:board_game_randomizer/models/game.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import 'package:path/path.dart';
 import 'dart:io';
 import 'dart:math';
 import 'package:numberpicker/numberpicker.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -64,14 +68,28 @@ class _MainState extends State<Main> {
     _initDb();
   }
 
-  _initDb() async {
-    var databasesPath = await getDatabasesPath();
-    var path = join(databasesPath, "games.db");
+  Future<String> _getPath() async {
+    var path = "";
+    if (kIsWeb) {
+      // Change default factory on the web
+      databaseFactory = databaseFactoryFfiWeb;
+      path = 'my_web_web.db';
+    } else {
+      var databasesPath = await getDatabasesPath();
+      path = join(databasesPath, "games.db");
+    }
+    return path;
+  }
 
+  _initDb() async {
+    var path = await _getPath();
     // Make sure the directory exists
-    try {
-      await Directory(databasesPath).create(recursive: true);
-    } catch (_) {}
+    if (!kIsWeb) {
+      var databasesPath = await getDatabasesPath();
+      try {
+        await Directory(databasesPath).create(recursive: true);
+      } catch (_) {}
+    }
 
     // Delete the database
     await deleteDatabase(path);
@@ -115,8 +133,7 @@ class _MainState extends State<Main> {
   }
 
   Future<List<Expansions>> _getExpansions(Games game) async {
-    var databasesPath = await getDatabasesPath();
-    var path = join(databasesPath, "games.db");
+    var path = await _getPath();
     var db = await openDatabase(path);
 
     List<Expansions> expansions = [];
@@ -129,8 +146,7 @@ class _MainState extends State<Main> {
   }
 
   Future<List<Options>> _getOptions() async {
-    var databasesPath = await getDatabasesPath();
-    var path = join(databasesPath, "games.db");
+    var path = await _getPath();
     var db = await openDatabase(path);
 
     List<Options> options = [];
@@ -245,16 +261,22 @@ class _MainState extends State<Main> {
               ? Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Center(
-                      child: NumberPicker(
-                    value: _currentPlayerCount,
-                    minValue: 1,
-                    maxValue: 10,
-                    step: 1,
-                    itemHeight: 30,
-                    axis: Axis.horizontal,
-                    onChanged: (value) =>
-                        setState(() => _currentPlayerCount = value),
-                  )))
+                      child: ScrollConfiguration(
+                          behavior: ScrollConfiguration.of(context)
+                              .copyWith(dragDevices: {
+                            PointerDeviceKind.touch,
+                            PointerDeviceKind.mouse,
+                          }),
+                          child: NumberPicker(
+                            value: _currentPlayerCount,
+                            minValue: 1,
+                            maxValue: 10,
+                            step: 1,
+                            itemHeight: 30,
+                            axis: Axis.horizontal,
+                            onChanged: (value) =>
+                                setState(() => _currentPlayerCount = value),
+                          ))))
               : Container(),
           CheckboxListTile(
               value: baseChecked,
