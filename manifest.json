@@ -1,11 +1,11 @@
 {
-    "name": "board_game_randomizer",
-    "short_name": "board_game_randomizer",
+    "name": "Board Game Setup Randomizer",
+    "short_name": "Board Game Setup Randomizer",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Never shuffle setups again",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
