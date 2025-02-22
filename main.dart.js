@@ -9345,7 +9345,7 @@ var $async$a_J=A.L(function(d,e){if(d===1)return A.H(e,r)
 while(true)switch(s){case 0:p=A.h4("https://api.github.com/repos/anovis/BG-Setup-User-Feedback/issues",0,null)
 o=t.N
 n=A.ao(["title",a,"body",c,"labels",A.b([b],t.s)],o,t.z)
-m=A.ao(["Authorization","token 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","Accept","application/vnd.github.v3+json"],o,o)
+m=A.ao(["Authorization","token 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","Accept","application/vnd.github.v3+json"],o,o)
 s=3
 return A.D(A.aZZ(p,B.dc.my(n),m),$async$a_J)
 case 3:q=e.b
@@ -9409,9 +9409,7 @@ _.f=c
 _.r=null
 _.w=d
 _.x=e
-_.Q=_.z=_.y=!0
-_.as=!1
-_.at=!0
+_.at=_.as=_.Q=_.z=_.y=!0
 _.ax=f
 _.ay=g
 _.ch=!0
