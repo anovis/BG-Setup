@@ -48439,11 +48439,11 @@ $S:135}
 A.Ir.prototype={
 eZ(){return new A.cd(16,"Ark Nova",0,0,1,3,4,0,0,"Player Count")},
 kd(){return A.b([new A.ch("Marine Worlds",16)],t.vw)},
-eR(a){return A.b([B.RM,B.Sw,B.Pk,B.Qc,B.S6,B.Sh,B.Ms,B.N1,B.Si,B.Pg,B.PC,B.R3,B.P2,B.MQ,B.RP],t.O)},
+eR(a){return A.b([B.RM,B.Sw,B.Pk,B.Qc,B.S6,B.Sh,B.Ms,B.N1,B.Si,B.Pg,B.PC,B.R2,B.P2,B.MQ,B.RP],t.O)},
 ih(){return A.b([B.FZ],t.nv)}}
 A.IB.prototype={
 eZ(){return new A.cd(17,"Azul Duel",0,0,1,3,4,1,0,"Count")},
-eR(a){return A.b([B.Ph,B.OQ,B.QA,B.Op,B.NB,B.RI,B.Og,B.QU],t.O)}}
+eR(a){return A.b([B.Ph,B.OP,B.RC,B.P0,B.NB,B.RI,B.Og,B.QT],t.O)}}
 A.IL.prototype={
 eZ(){return new A.cd(12,"Black Forest",10,2,null,1,10,1,1,"Player Count")},
 eR(a){var s,r,q=A.b([],t.O)
@@ -48451,16 +48451,16 @@ for(s=this.a,r=0;r<72;r+=2)q.push(new A.j(s[r+1],12,"default",null,s[r],null))
 return q}}
 A.J1.prototype={
 eZ(){return new A.cd(8,"Canvas",4,0,null,1,10,1,0,"Player Count")},
-eR(a){return A.b([B.S7,B.Q_,B.QD,B.MJ,B.Rg,B.MP,B.Sa,B.OB,B.Q4,B.QY,B.MD,B.Ne],t.O)}}
+eR(a){return A.b([B.S7,B.Q_,B.QC,B.MJ,B.Rf,B.MP,B.Sa,B.OA,B.Q4,B.QX,B.MD,B.Ne],t.O)}}
 A.J5.prototype={
 eZ(){return new A.cd(7,"Cartographers",1,1,null,1,10,0,0,"Player Count")},
 kd(){return A.b([new A.ch("Heroes",7),new A.ch("New Discoveries",7),new A.ch("Map Pack 1: Nebblis",7),new A.ch("Map Pack 2: Affril",7),new A.ch("Map Pack 3: Undercity",7),new A.ch("Map Pack 4: Frozen Expanse",7),new A.ch("Map Pack 5: Kethra's Steppe",7),new A.ch("Map Pack 6: Hornhelm",7)],t.vw)},
-eR(a){return A.b([B.ME,B.Oa,B.PL,B.OL,B.Pc,B.Rm,B.NP,B.Rz,B.Sg,B.MB,B.Nm,B.R7,B.MV,B.Rv,B.QL,B.S1,B.NZ,B.N7,B.OH,B.N8,B.Pw,B.Sl,B.RD,B.Oq,B.OX,B.NJ,B.MZ,B.Rr,B.Pb,B.N3,B.Qf,B.Qi,B.MW,B.Nv,B.Os,B.Mr,B.Sx,B.Sy,B.OS,B.ON,B.R8,B.R9,B.Nf,B.Ng,B.QW,B.QX,B.O0,B.O1,B.R5],t.O)},
+eR(a){return A.b([B.ME,B.Oa,B.PL,B.OK,B.Pc,B.Rl,B.NP,B.Ry,B.Sg,B.MB,B.Nm,B.R6,B.MV,B.Ru,B.QK,B.S1,B.NZ,B.N7,B.OG,B.N8,B.Pw,B.Sl,B.RD,B.Op,B.OW,B.NJ,B.MZ,B.Rq,B.Pb,B.N3,B.Qf,B.Qi,B.MW,B.Nv,B.Or,B.Mr,B.Sx,B.Sy,B.OR,B.OM,B.R7,B.R8,B.Nf,B.Ng,B.QV,B.QW,B.O0,B.O1,B.R4],t.O)},
 ih(){return A.b([B.Fz,B.FT,B.FQ,B.G7,B.FL],t.nv)}}
 A.J6.prototype={
 eZ(){return new A.cd(1,"Cascadia",1,1,null,1,10,0,0,"Player Count")},
 kd(){return A.b([new A.ch("Kickstarter",1),new A.ch("Landmarks",1),new A.ch("Tantrum House Season 8",1)],t.vw)},
-eR(a){return A.b([B.Ou,B.Ov,B.Ow,B.Ox,B.Q6,B.PO,B.O8,B.Nu,B.PU,B.PV,B.PW,B.PX,B.QQ,B.QR,B.QS,B.QT,B.MT,B.Pn,B.MC,B.NY,B.Mp,B.Qj,B.Q8,B.Mq,B.Ok,B.RQ,B.RR,B.RS,B.QG,B.Nz,B.NH,B.Sd,B.Se,B.Sf,B.OU,B.OV,B.OW,B.Sn,B.MX,B.Od,B.Rx,B.NM],t.O)},
+eR(a){return A.b([B.Ot,B.Ou,B.Ov,B.Ow,B.Q6,B.PO,B.O8,B.Nu,B.PU,B.PV,B.PW,B.PX,B.QP,B.QQ,B.QR,B.QS,B.MT,B.Pn,B.MC,B.NY,B.Mp,B.Qj,B.Q8,B.Mq,B.Ok,B.RQ,B.RR,B.RS,B.QF,B.Nz,B.NH,B.Sd,B.Se,B.Sf,B.OT,B.OU,B.OV,B.Sn,B.MX,B.Od,B.Rw,B.NM],t.O)},
 ih(){return A.b([B.Fx,B.FC,B.G8,B.G0,B.FU],t.nv)}}
 A.J7.prototype={
 eZ(){return new A.cd(4,"Cascadia Landmarks",0,1,1,2,6,0,1,"Player Count")},
@@ -48487,40 +48487,40 @@ return j}}
 A.KI.prototype={
 eZ(){return new A.cd(14,"Everdell",1,1,1,2,3,0,0,"Player Count")},
 kd(){return A.b([new A.ch("Pearlbrook",14),new A.ch("Newleaf",14),new A.ch("Bellfaire",14)],t.vw)},
-eR(a){return A.b([B.NR,B.Rb,B.Po,B.QH,B.Qe,B.SA,B.Ni,B.Ol,B.R4,B.MK,B.QP,B.S0,B.Sm,B.Pj,B.Ri,B.Q3,B.PK,B.Sp,B.Qk,B.Oj,B.RF,B.Sq,B.Ro,B.Qg,B.Rj,B.Qo,B.QF,B.RT,B.P3,B.Qt,B.No,B.OI,B.N9,B.PJ,B.Qb,B.NT,B.NS,B.R2,B.Nd,B.Nt,B.N0,B.NC,B.Sz,B.St,B.P_,B.O2,B.OG,B.Qs,B.Qr,B.Sv,B.NA,B.Qa,B.OA,B.Sk,B.MA,B.OY,B.O7,B.NQ,B.Pa,B.QB,B.Rq,B.NG,B.Mw,B.Rw,B.S_,B.Qw,B.Nx,B.Ob,B.OE],t.O)},
+eR(a){return A.b([B.NR,B.Ra,B.Po,B.QG,B.Qe,B.SA,B.Ni,B.Ol,B.R3,B.MK,B.QO,B.S0,B.Sm,B.Pj,B.Rh,B.Q3,B.PK,B.Sp,B.Qk,B.Oj,B.RF,B.Sq,B.Rn,B.Qg,B.Ri,B.Qo,B.QE,B.RT,B.P3,B.Qt,B.No,B.OH,B.N9,B.PJ,B.Qb,B.NT,B.NS,B.R1,B.Nd,B.Nt,B.N0,B.NC,B.Sz,B.St,B.OZ,B.O2,B.OF,B.Qs,B.Qr,B.Sv,B.NA,B.Qa,B.Oz,B.Sk,B.MA,B.OX,B.O7,B.NQ,B.Pa,B.QA,B.Rp,B.NG,B.Mw,B.Rv,B.S_,B.Qw,B.Nx,B.Ob,B.OD],t.O)},
 ih(){return A.b([B.FK,B.Fy,B.G_],t.nv)}}
 A.KJ.prototype={
 eZ(){return new A.cd(15,"Everdell Duo",1,1,null,1,10,0,0,"Player Count")},
-eR(a){return A.b([B.ML,B.Pu,B.MG,B.OK,B.QM,B.Ot,B.Qx,B.Om,B.Rk,B.O_,B.RZ,B.PI,B.P4,B.PG,B.Rd,B.Pd,B.Q1,B.MH,B.Pl,B.Nw,B.RA,B.PQ,B.QN,B.OR,B.QJ,B.P1,B.Pz,B.RL,B.PA,B.Na,B.P5],t.O)},
+eR(a){return A.b([B.ML,B.Pu,B.MG,B.OJ,B.QL,B.Os,B.Qx,B.Om,B.Rj,B.O_,B.RZ,B.PI,B.P4,B.PG,B.Rc,B.Pd,B.Q1,B.MH,B.Pl,B.Nw,B.Rz,B.PQ,B.QM,B.OQ,B.QI,B.P1,B.Pz,B.RL,B.PA,B.Na,B.P5],t.O)},
 ih(){return A.b([B.FW,B.FG,B.FE,B.FB,B.FV,B.G6],t.nv)}}
 A.KS.prototype={
 eZ(){return new A.cd(10,"Finspan",1,1,null,1,10,1,0,"Player Count")},
-eR(a){return A.b([B.Mu,B.Nk,B.RO,B.N2,B.Ny,B.Pe,B.Mv,B.Nl,B.NV,B.Px,B.NN,B.Oo,B.P9,B.Rn,B.O6,B.S8,B.Ru,B.Pm],t.O)},
+eR(a){return A.b([B.Mu,B.Nk,B.RO,B.N2,B.Ny,B.Pe,B.Mv,B.Nl,B.NV,B.Px,B.NN,B.Oo,B.P9,B.Rm,B.O6,B.S8,B.Rt,B.Pm],t.O)},
 ih(){return A.b([B.G2,B.G3,B.G4],t.nv)}}
 A.Lg.prototype={
 eZ(){return new A.cd(9,"Get On Board",2,0,null,1,10,1,0,"Player Count")},
-eR(a){return A.b([B.PS,B.MS,B.OM,B.Rt,B.Oi,B.Oy],t.O)}}
+eR(a){return A.b([B.PS,B.MS,B.OL,B.Rs,B.Oi,B.Ox],t.O)}}
 A.Mv.prototype={
 eZ(){return new A.cd(5,"Mind Space",1,1,null,1,10,1,0,"Player Count")},
-eR(a){return A.b([B.RK,B.Qv,B.Qp,B.OD,B.Qh,B.NF,B.Oc,B.N4,B.PH,B.RE,B.Rp,B.PT,B.NK,B.Qu,B.Of],t.O)},
+eR(a){return A.b([B.RK,B.Qv,B.Qp,B.OC,B.Qh,B.NF,B.Oc,B.N4,B.PH,B.RE,B.Ro,B.PT,B.NK,B.Qu,B.Of],t.O)},
 ih(){return A.b([B.FF,B.FD,B.FA],t.nv)}}
 A.Oi.prototype={
 eZ(){return new A.cd(2,"Res Arcana",1,0,1,1,5,0,0,"Player Count")},
 kd(){return A.b([new A.ch("Lux et Tenebrae",2),new A.ch("Perlae Imperii",2),new A.ch("Duo",2)],t.vw)},
-eR(a){return A.b([B.Mz,B.O4,B.MF,B.Ra,B.S2,B.OP,B.Sc,B.PP,B.OF,B.On,B.Q9,B.NO,B.Qd,B.Qq,B.So,B.R1,B.QV,B.Pf,B.N5,B.Q7,B.MO,B.Rl],t.O)},
+eR(a){return A.b([B.Mz,B.O4,B.MF,B.R9,B.S2,B.OO,B.Sc,B.PP,B.OE,B.On,B.Q9,B.NO,B.Qd,B.Qq,B.So,B.R0,B.QU,B.Pf,B.N5,B.Q7,B.MO,B.Rk],t.O)},
 ih(){return A.b([B.G9,B.Gb],t.nv)}}
 A.Qe.prototype={
 eZ(){return new A.cd(13,"Tiny Towns",1,1,null,1,10,0,0,"Player Count")},
 kd(){return A.b([new A.ch("Fortune",13)],t.vw)},
-eR(a){return A.b([B.Pv,B.NX,B.Sb,B.QC,B.SB,B.NE,B.RH,B.Qz,B.NI,B.OZ,B.PE,B.Mt,B.OJ,B.RB,B.Mn,B.P6,B.N6,B.Mo,B.MY,B.Q5,B.O3,B.R6,B.PR,B.Or,B.MI,B.Oh,B.PZ,B.Rc,B.Mx,B.R_,B.Rf,B.Q2,B.Pp,B.MN,B.QO,B.O9,B.My,B.N_],t.O)},
+eR(a){return A.b([B.Pv,B.NX,B.Sb,B.QB,B.SB,B.NE,B.RH,B.Qz,B.NI,B.OY,B.PE,B.Mt,B.OI,B.RA,B.Mn,B.P6,B.N6,B.Mo,B.MY,B.Q5,B.O3,B.R5,B.PR,B.Oq,B.MI,B.Oh,B.PZ,B.Rb,B.Mx,B.QZ,B.Re,B.Q2,B.Pp,B.MN,B.QN,B.O9,B.My,B.N_],t.O)},
 ih(){return A.b([B.FM,B.FR,B.FP,B.FN,B.FJ,B.FO,B.FS],t.nv)}}
 A.QQ.prototype={
 eZ(){return new A.cd(3,"Wingspan",4,0,null,1,10,0,0,"Player Count")},
 kd(){return A.b([new A.ch("Europe",3),new A.ch("Oceania",3),new A.ch("Asia",3)],t.vw)},
-eR(a){return A.b([B.Nc,B.Rh,B.Nb,B.Pt,B.Su,B.Ss,B.Np,B.Re,B.QK,B.P7,B.MM,B.OT,B.RV,B.S5,B.QE,B.Nq,B.PF,B.Ml,B.Pq,B.R0,B.Sj,B.Ns,B.RN,B.NW,B.RU,B.Qm,B.Py,B.NL,B.Qn,B.Rs,B.PY,B.QZ,B.P0,B.MU,B.P8,B.RG,B.Pi,B.Ry,B.RY,B.Pr,B.RW,B.OC,B.Mm,B.S3,B.NU,B.Oe],t.O)}}
+eR(a){return A.b([B.Nc,B.Rg,B.Nb,B.Pt,B.Su,B.Ss,B.Np,B.Rd,B.QJ,B.P7,B.MM,B.OS,B.RV,B.S5,B.QD,B.Nq,B.PF,B.Ml,B.Pq,B.R_,B.Sj,B.Ns,B.RN,B.NW,B.RU,B.Qm,B.Py,B.NL,B.Qn,B.Rr,B.PY,B.QY,B.P_,B.MU,B.P8,B.RG,B.Pi,B.Rx,B.RY,B.Pr,B.RW,B.OB,B.Mm,B.S3,B.NU,B.Oe],t.O)}}
 A.QS.prototype={
 eZ(){return new A.cd(11,"Wyrmspan",4,1,null,1,10,1,0,"Player Count")},
-eR(a){return A.b([B.PD,B.O5,B.Nr,B.Sr,B.ND,B.RX,B.Ql,B.MR,B.PN,B.Nh,B.S9,B.Nj,B.PB,B.OO,B.Ps,B.QI,B.PM,B.RJ,B.S4,B.Q0,B.Nn,B.Oz,B.Qy,B.RC],t.O)},
+eR(a){return A.b([B.PD,B.O5,B.Nr,B.Sr,B.ND,B.RX,B.Ql,B.MR,B.PN,B.Nh,B.S9,B.Nj,B.PB,B.ON,B.Ps,B.QH,B.PM,B.RJ,B.S4,B.Q0,B.Nn,B.Oy,B.Qy,B.RB],t.O)},
 ih(){return A.b([B.FX,B.G5],t.nv)}}
 A.Bo.prototype={
 ak(){return new A.Oh(new A.bm(null,t.am),new A.uZ(B.i7,$.aA()),B.j)}}
@@ -99376,45 +99376,45 @@ B.Ol=new A.j("Discard any, then draw 2 for every card discarded",14,"Forest",nul
 B.Om=new A.j("Housing Inovation",15,"B",null,null,null)
 B.On=new A.j("Catacombs of the Dead",2,"B",null,"Sacrificial Pit",null)
 B.Oo=new A.j("Fish With Tokens",10,"Week 2",null,"Each Of These Tags",null)
-B.Op=new A.j("Ounter Dome (1)",17,"default",null,"Columns (7)",null)
-B.Oq=new A.j("Ulem\u2019s Wallow",7,"Lowland","Heroes",null,null)
-B.Or=new A.j("Trading Post",13,"Black",null,null,null)
-B.Os=new A.j("Map C",7,"Map","Heroes",null,null)
-B.Ot=new A.j("Edge of the Map",15,"A",null,null,null)
-B.Ou=new A.j("Bear A",1,"Bear",null,null,null)
-B.Ov=new A.j("Bear B",1,"Bear",null,null,null)
-B.Ow=new A.j("Bear C",1,"Bear",null,null,null)
-B.Ox=new A.j("Bear D",1,"Bear",null,null,null)
-B.Oy=new A.j("Museum (Gray)",9,"default",null,null,null)
-B.Oz=new A.j("The Guild of Highlands",11,"Guild",null,null,null)
-B.OA=new A.j("Pay 3 twigs and then get 3 any",14,"Forest","Bellfaire",null,null)
-B.OB=new A.j("Hierarchy",8,"default",null,null,null)
-B.OD=new A.j("Empathy",5,"A",null,null,null)
-B.OC=new A.j("Token on pairs of matching symbols",3,"default","Asia","Token in forest",null)
-B.OE=new A.j("Community",14,"Garland Award","Bellfaire",null,null)
-B.OH=new A.j("Faunlost Thicket",7,"Forest","Heroes",null,null)
-B.OG=new A.j("Magic Show",14,"Special Event","Newleaf",null,null)
-B.OF=new A.j("Sacrificial Pit",2,"A",null,"Catacombs of the Dead",null)
-B.OI=new A.j("Massquerade Invications (Messenger, Fairgrounds)",14,"Special Event","Pearlbrook",null,null)
-B.OJ=new A.j("Temple",13,"Orange",null,null,null)
-B.OK=new A.j("Pearlbrook Trade",15,"A",null,null,null)
-B.OL=new A.j("Stoneside Forest",7,"Forest",null,null,null)
-B.OM=new A.j("Businessman",9,"default",null,null,null)
-B.ON=new A.j("Map Z",7,"Map","New Discoveries",null,null)
-B.OO=new A.j("SHY Dragons",11,"default",null,"HELPFUL Dragons",null)
-B.OP=new A.j("Alchemist's Tower",2,"A",null,"Sacred Grove",null)
-B.OQ=new A.j("Rows with all Colors (4)",17,"default",null,"Rows (3)",null)
-B.OR=new A.j("Foe Defeated",15,"D",null,null,null)
-B.OS=new A.j("Map Y",7,"Map","New Discoveries",null,null)
-B.OT=new A.j("Egg in Ground",3,"default",null,"Ground Birds with Egg",null)
-B.OU=new A.j("Hawk E",1,"Hawk","Landmarks",null,null)
-B.OV=new A.j("Hawk F",1,"Hawk","Landmarks",null,null)
-B.OW=new A.j("Hawk G",1,"Hawk","Landmarks",null,null)
-B.OX=new A.j("Clawsgrave Peaks",7,"Lowland","Heroes",null,null)
-B.OY=new A.j("Gathering of the Elders",14,"Special Event","Bellfaire",null,null)
-B.OZ=new A.j("Abbey",13,"Orange",null,null,null)
-B.P_=new A.j("Stock Market Boom",14,"Special Event","Newleaf",null,null)
-B.P0=new A.j("Rodent + Fish Cost",3,"default","Oceania","No Goal",null)
+B.Op=new A.j("Ulem\u2019s Wallow",7,"Lowland","Heroes",null,null)
+B.Oq=new A.j("Trading Post",13,"Black",null,null,null)
+B.Or=new A.j("Map C",7,"Map","Heroes",null,null)
+B.Os=new A.j("Edge of the Map",15,"A",null,null,null)
+B.Ot=new A.j("Bear A",1,"Bear",null,null,null)
+B.Ou=new A.j("Bear B",1,"Bear",null,null,null)
+B.Ov=new A.j("Bear C",1,"Bear",null,null,null)
+B.Ow=new A.j("Bear D",1,"Bear",null,null,null)
+B.Ox=new A.j("Museum (Gray)",9,"default",null,null,null)
+B.Oy=new A.j("The Guild of Highlands",11,"Guild",null,null,null)
+B.Oz=new A.j("Pay 3 twigs and then get 3 any",14,"Forest","Bellfaire",null,null)
+B.OA=new A.j("Hierarchy",8,"default",null,null,null)
+B.OC=new A.j("Empathy",5,"A",null,null,null)
+B.OB=new A.j("Token on pairs of matching symbols",3,"default","Asia","Token in forest",null)
+B.OD=new A.j("Community",14,"Garland Award","Bellfaire",null,null)
+B.OG=new A.j("Faunlost Thicket",7,"Forest","Heroes",null,null)
+B.OF=new A.j("Magic Show",14,"Special Event","Newleaf",null,null)
+B.OE=new A.j("Sacrificial Pit",2,"A",null,"Catacombs of the Dead",null)
+B.OH=new A.j("Massquerade Invications (Messenger, Fairgrounds)",14,"Special Event","Pearlbrook",null,null)
+B.OI=new A.j("Temple",13,"Orange",null,null,null)
+B.OJ=new A.j("Pearlbrook Trade",15,"A",null,null,null)
+B.OK=new A.j("Stoneside Forest",7,"Forest",null,null,null)
+B.OL=new A.j("Businessman",9,"default",null,null,null)
+B.OM=new A.j("Map Z",7,"Map","New Discoveries",null,null)
+B.ON=new A.j("SHY Dragons",11,"default",null,"HELPFUL Dragons",null)
+B.OO=new A.j("Alchemist's Tower",2,"A",null,"Sacred Grove",null)
+B.OP=new A.j("Rows with all Colors (4)",17,"default",null,"Rows (3)",null)
+B.OQ=new A.j("Foe Defeated",15,"D",null,null,null)
+B.OR=new A.j("Map Y",7,"Map","New Discoveries",null,null)
+B.OS=new A.j("Egg in Ground",3,"default",null,"Ground Birds with Egg",null)
+B.OT=new A.j("Hawk E",1,"Hawk","Landmarks",null,null)
+B.OU=new A.j("Hawk F",1,"Hawk","Landmarks",null,null)
+B.OV=new A.j("Hawk G",1,"Hawk","Landmarks",null,null)
+B.OW=new A.j("Clawsgrave Peaks",7,"Lowland","Heroes",null,null)
+B.OX=new A.j("Gathering of the Elders",14,"Special Event","Bellfaire",null,null)
+B.OY=new A.j("Abbey",13,"Orange",null,null,null)
+B.OZ=new A.j("Stock Market Boom",14,"Special Event","Newleaf",null,null)
+B.P_=new A.j("Rodent + Fish Cost",3,"default","Oceania","No Goal",null)
+B.P0=new A.j("Outer Dome (1)",17,"default",null,"Columns (7)",null)
 B.P1=new A.j("Thriving Production",15,"E",null,null,null)
 B.P2=new A.j("3 kiosks/pavilions",16,"Bonus Tile","Marine Worlds",null,null)
 B.P3=new A.j("2 pebbles, & 1 card",14,"Forest","Pearlbrook",null,null)
@@ -99513,72 +99513,72 @@ B.Qw=new A.j("Beauty",14,"Garland Award","Bellfaire",null,null)
 B.Qx=new A.j("Heroic Leadership",15,"A",null,null,null)
 B.Qy=new A.j("The Plains Guild",11,"Guild",null,null,null)
 B.Qz=new A.j("Shed",13,"Grey",null,null,null)
-B.QA=new A.j("Columns (7)",17,"default",null,"Ounter Dome (1)",null)
-B.QB=new A.j("King's Road Established",14,"Special Event","Bellfaire",null,null)
-B.QC=new A.j("Greenhouse",13,"Red",null,null,null)
-B.QD=new A.j("Variety",8,"default",null,null,null)
-B.QE=new A.j("Set of Eggs",3,"default",null,"Total Birds",null)
-B.QF=new A.j("Flying Doctor Service (Doctor, Postal Pigeon)",14,"Special Event",null,null,null)
-B.QG=new A.j("Elk E",1,"Elk","Landmarks",null,null)
-B.QH=new A.j("Copy any basic action on the board and draw 1",14,"Forest",null,null,null)
-B.QI=new A.j(u.W,11,"default",null,"Dragon & cave cards in your CRIMSON CAVERN",null)
-B.QJ=new A.j("Housing Boom",15,"D",null,null,null)
-B.QK=new A.j("Cavity Birds with Egg",3,"default",null,"Egg in Cavity",null)
-B.QL=new A.j("Lost Barony",7,"Movement",null,null,null)
-B.QM=new A.j("Perilous Travels",15,"A",null,null,null)
-B.QN=new A.j("Tourism",15,"D",null,null,null)
-B.QO=new A.j("Jeweler",13,"Yellow","Fortune",null,null)
-B.QP=new A.j("1 twig, 1 resin & 1 berry",14,"Forest",null,null,null)
-B.QQ=new A.j("Hawk A",1,"Hawk",null,null,null)
-B.QR=new A.j("Hawk B",1,"Hawk",null,null,null)
-B.QS=new A.j("Hawk C",1,"Hawk",null,null,null)
-B.QT=new A.j("Hawk D",1,"Hawk",null,null,null)
-B.QU=new A.j("Empty Special Tile (-3)",17,"default",null,"Multicolored tiles are filled (2)",null)
-B.QV=new A.j("Blood Isle",2,"B","Perlae Imperii","Pearl Bed",null)
-B.QW=new A.j("Map F1",7,"Map","Map Pack 4: Frozen Expanse",null,null)
-B.QX=new A.j("Map F2",7,"Map","Map Pack 4: Frozen Expanse",null,null)
-B.QY=new A.j("Proximity",8,"default",null,null,null)
-B.QZ=new A.j("Invertebrate Cost",3,"default","Oceania","Fruit + Seed Cost",null)
-B.R_=new A.j("Mine",13,"Grey","Fortune",null,null)
-B.R0=new A.j("Filled Columns",3,"default","Europe","Birds in Row",null)
-B.R1=new A.j("Alchemical Workshop",2,"A","Perlae Imperii","Mystical Menagerie",null)
-B.R2=new A.j("2 twigs & 1 resin",14,"Forest","Newleaf",null,null)
-B.R3=new A.j("Tile as any icon",16,"Bonus Tile","Marine Worlds",null,null)
-B.R4=new A.j("2 resin & 1 twig",14,"Forest",null,null,null)
-B.R5=new A.j("Map H",7,"Map","Map Pack 6: Hornhelm",null,null)
-B.R6=new A.j("Bank",13,"Black",null,null,null)
-B.R7=new A.j("Shieldgate",7,"Village",null,null,null)
-B.R8=new A.j("Map A1",7,"Map","Map Pack 2: Affril",null,null)
-B.R9=new A.j("Map A2",7,"Map","Map Pack 2: Affril",null,null)
-B.Ra=new A.j("Cursed Forge",2,"B",null,"Dwarven Mines",null)
-B.Rb=new A.j("3 berries",14,"Forest",null,null,null)
-B.Rc=new A.j("Tithe Barn",13,"Red","Fortune",null,null)
-B.Rd=new A.j("Farming Innovation",15,"C",null,null,null)
-B.Re=new A.j("Egg in Bowl",3,"default",null,"Bowl Birds with Egg",null)
-B.Rf=new A.j("Cathedral",13,"Orange","Fortune",null,null)
-B.Rg=new A.j("Symmetry",8,"default",null,null,null)
-B.Rh=new A.j("Egg in Forest",3,"default",null,"Bird in Forest",null)
-B.Ri=new A.j("Remembering the Fallen (Cemetary, Shepard)",14,"Special Event",null,null,null)
-B.Rj=new A.j("Ancient Scrolls Discovered (Historian, Ruins)",14,"Special Event",null,null,null)
-B.Rk=new A.j("Population Growth",15,"B",null,null,null)
-B.Rl=new A.j("Elvish Heartwood",2,"A","Duo","Dwarven Forge",null)
-B.Rm=new A.j("The Golden Granary",7,"Lowland",null,null,null)
-B.Rn=new A.j("Fish Without Tokens",10,"Week 3",null,"If Activated Cards",null)
-B.Ro=new A.j("Pristine Chapel Ceiling (Woodcarver, Chapel)",14,"Special Event",null,null,null)
-B.Rp=new A.j("Security",5,"C",null,null,null)
-B.Rq=new A.j("Statues Commissioned",14,"Special Event","Bellfaire",null,null)
-B.Rr=new A.j("Outer Enclave",7,"Village","Heroes",null,null)
-B.Rs=new A.j("Beak Pointing Right",3,"default","Oceania","Beak Pointing Left",null)
-B.Rt=new A.j("Tourist",9,"default",null,null,null)
-B.Ru=new A.j("Large Fish",10,"Week 3",null,"Every 3 Eggs",null)
-B.Rv=new A.j("The Broken Road",7,"Movement",null,null,null)
-B.Rw=new A.j("Peace",14,"Garland Award","Bellfaire",null,null)
-B.Rx=new A.j("Bear: T",1,"Bear","Tantrum House Season 8",null,null)
-B.Ry=new A.j("Token not on edge of map",3,"default","Asia","Token on edge of map",null)
-B.Rz=new A.j("Shoreside Expanse",7,"Lowland",null,null,null)
-B.RA=new A.j("Prosperous Business",15,"D",null,null,null)
-B.RB=new A.j("Almshouse",13,"Green",null,null,null)
-B.RC=new A.j("The Rainforest Guild",11,"Guild",null,null,null)
+B.QA=new A.j("King's Road Established",14,"Special Event","Bellfaire",null,null)
+B.QB=new A.j("Greenhouse",13,"Red",null,null,null)
+B.QC=new A.j("Variety",8,"default",null,null,null)
+B.QD=new A.j("Set of Eggs",3,"default",null,"Total Birds",null)
+B.QE=new A.j("Flying Doctor Service (Doctor, Postal Pigeon)",14,"Special Event",null,null,null)
+B.QF=new A.j("Elk E",1,"Elk","Landmarks",null,null)
+B.QG=new A.j("Copy any basic action on the board and draw 1",14,"Forest",null,null,null)
+B.QH=new A.j(u.W,11,"default",null,"Dragon & cave cards in your CRIMSON CAVERN",null)
+B.QI=new A.j("Housing Boom",15,"D",null,null,null)
+B.QJ=new A.j("Cavity Birds with Egg",3,"default",null,"Egg in Cavity",null)
+B.QK=new A.j("Lost Barony",7,"Movement",null,null,null)
+B.QL=new A.j("Perilous Travels",15,"A",null,null,null)
+B.QM=new A.j("Tourism",15,"D",null,null,null)
+B.QN=new A.j("Jeweler",13,"Yellow","Fortune",null,null)
+B.QO=new A.j("1 twig, 1 resin & 1 berry",14,"Forest",null,null,null)
+B.QP=new A.j("Hawk A",1,"Hawk",null,null,null)
+B.QQ=new A.j("Hawk B",1,"Hawk",null,null,null)
+B.QR=new A.j("Hawk C",1,"Hawk",null,null,null)
+B.QS=new A.j("Hawk D",1,"Hawk",null,null,null)
+B.QT=new A.j("Empty Special Tile (-3)",17,"default",null,"Multicolored tiles are filled (2)",null)
+B.QU=new A.j("Blood Isle",2,"B","Perlae Imperii","Pearl Bed",null)
+B.QV=new A.j("Map F1",7,"Map","Map Pack 4: Frozen Expanse",null,null)
+B.QW=new A.j("Map F2",7,"Map","Map Pack 4: Frozen Expanse",null,null)
+B.QX=new A.j("Proximity",8,"default",null,null,null)
+B.QY=new A.j("Invertebrate Cost",3,"default","Oceania","Fruit + Seed Cost",null)
+B.QZ=new A.j("Mine",13,"Grey","Fortune",null,null)
+B.R_=new A.j("Filled Columns",3,"default","Europe","Birds in Row",null)
+B.R0=new A.j("Alchemical Workshop",2,"A","Perlae Imperii","Mystical Menagerie",null)
+B.R1=new A.j("2 twigs & 1 resin",14,"Forest","Newleaf",null,null)
+B.R2=new A.j("Tile as any icon",16,"Bonus Tile","Marine Worlds",null,null)
+B.R3=new A.j("2 resin & 1 twig",14,"Forest",null,null,null)
+B.R4=new A.j("Map H",7,"Map","Map Pack 6: Hornhelm",null,null)
+B.R5=new A.j("Bank",13,"Black",null,null,null)
+B.R6=new A.j("Shieldgate",7,"Village",null,null,null)
+B.R7=new A.j("Map A1",7,"Map","Map Pack 2: Affril",null,null)
+B.R8=new A.j("Map A2",7,"Map","Map Pack 2: Affril",null,null)
+B.R9=new A.j("Cursed Forge",2,"B",null,"Dwarven Mines",null)
+B.Ra=new A.j("3 berries",14,"Forest",null,null,null)
+B.Rb=new A.j("Tithe Barn",13,"Red","Fortune",null,null)
+B.Rc=new A.j("Farming Innovation",15,"C",null,null,null)
+B.Rd=new A.j("Egg in Bowl",3,"default",null,"Bowl Birds with Egg",null)
+B.Re=new A.j("Cathedral",13,"Orange","Fortune",null,null)
+B.Rf=new A.j("Symmetry",8,"default",null,null,null)
+B.Rg=new A.j("Egg in Forest",3,"default",null,"Bird in Forest",null)
+B.Rh=new A.j("Remembering the Fallen (Cemetary, Shepard)",14,"Special Event",null,null,null)
+B.Ri=new A.j("Ancient Scrolls Discovered (Historian, Ruins)",14,"Special Event",null,null,null)
+B.Rj=new A.j("Population Growth",15,"B",null,null,null)
+B.Rk=new A.j("Elvish Heartwood",2,"A","Duo","Dwarven Forge",null)
+B.Rl=new A.j("The Golden Granary",7,"Lowland",null,null,null)
+B.Rm=new A.j("Fish Without Tokens",10,"Week 3",null,"If Activated Cards",null)
+B.Rn=new A.j("Pristine Chapel Ceiling (Woodcarver, Chapel)",14,"Special Event",null,null,null)
+B.Ro=new A.j("Security",5,"C",null,null,null)
+B.Rp=new A.j("Statues Commissioned",14,"Special Event","Bellfaire",null,null)
+B.Rq=new A.j("Outer Enclave",7,"Village","Heroes",null,null)
+B.Rr=new A.j("Beak Pointing Right",3,"default","Oceania","Beak Pointing Left",null)
+B.Rs=new A.j("Tourist",9,"default",null,null,null)
+B.Rt=new A.j("Large Fish",10,"Week 3",null,"Every 3 Eggs",null)
+B.Ru=new A.j("The Broken Road",7,"Movement",null,null,null)
+B.Rv=new A.j("Peace",14,"Garland Award","Bellfaire",null,null)
+B.Rw=new A.j("Bear: T",1,"Bear","Tantrum House Season 8",null,null)
+B.Rx=new A.j("Token not on edge of map",3,"default","Asia","Token on edge of map",null)
+B.Ry=new A.j("Shoreside Expanse",7,"Lowland",null,null,null)
+B.Rz=new A.j("Prosperous Business",15,"D",null,null,null)
+B.RA=new A.j("Almshouse",13,"Green",null,null,null)
+B.RB=new A.j("The Rainforest Guild",11,"Guild",null,null,null)
+B.RC=new A.j("Columns (7)",17,"default",null,"Outer Dome (1)",null)
 B.RD=new A.j("Craylund",7,"Lowland","Heroes",null,null)
 B.RE=new A.j("Soulmate",5,"B",null,null,null)
 B.RF=new A.j("Ministering to Miscreants (Monk, Dungeon)",14,"Special Event",null,null,null)
