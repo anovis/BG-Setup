@@ -56737,17 +56737,24 @@ aZ(a){return A.b([B.a6f,B.a2_,B.a4O,B.a7c,B.agL,B.a_N,B.av9,B.apX,B.arv,B.arw,B.
 bc(){return A.b([B.Rb,B.Q5,B.Pv,B.OX,B.R1],t.c)}}
 A.S4.prototype={
 aS(){return new A.aN("Cascadia",0,1,1,2,6,0,0,"Player Count",0,0)},
-c0(){return A.b([new A.ab("Kickstarter"),new A.ab("Tantrum House Season 8"),new A.ab("Landmarks"),new A.ab("Kickstarter Landmark Mini-Expansion")],t.E)},
+c0(){return A.b([new A.ab("Kickstarter"),new A.ab("Tantrum House Season 8"),new A.ab("Landmarks"),new A.ab("Kickstarter Landmark Mini-Expansion"),new A.ab("Alpine Animals")],t.E)},
 aZ(a){var s,r,q,p,o,n,m,l=t.M,k=A.b([B.a3x,B.a3y,B.a3z,B.a3A,B.a4R,B.abM,B.a0J,B.a7N,B.at9,B.ata,B.atb,B.atc,B.a4t,B.a4u,B.a4v,B.a4w,B.a0Q,B.akz,B.ajT,B.aaa,B.auA,B.a8E,B.agK,B.atv,B.asl,B.a25,B.a26,B.a27,B.a90,B.avC,B.af9,B.akh,B.aki,B.akj,B.a3j,B.a3k,B.a3l,B.a7R,B.amR,B.aiB,B.asG,B.a7S],l)
 for(s=0;s<5;++s){r=B.rC[s]
 for(q=A.adg(12,0),p=q.length,o=r+" ",n=0;n<q.length;q.length===p||(0,A.I)(q),++n)k.push(new A.a(o+q[n],"",r,"Landmarks",null))}l=A.b([],l)
 for(s=0;s<5;++s){r=B.rC[s]
 for(q=r+" P",m=1;m<4;++m)l.push(new A.a(q+m+" \u2b50","",r,"Kickstarter Landmark Mini-Expansion",null))}B.b.C(k,l)
+k.push(B.avd)
+k.push(B.ave)
+k.push(B.a1M)
+k.push(B.apI)
+k.push(B.abP)
+k.push(B.a4o)
+k.push(B.agZ)
 return k},
-bc(){return A.b([B.OM,B.RL,B.Oh,B.Rx,B.OW,B.PI,B.Ow,B.Oe,B.Qs,B.Pw],t.c)}}
+bc(){return A.b([B.OM,B.RL,B.Oh,B.Rx,B.OW,B.PI,B.Ow,B.Oe,B.Qs,B.Pw,B.Pb,B.Qf],t.c)}}
 A.S5.prototype={
 aS(){return new A.aN("Cascadia: Alpine Lakes",1,1,null,1,10,0,0,"Player Count",0,0)},
-c0(){return A.b([new A.ab("Alpine Animals"),new A.ab("Pristine Peaks")],t.E)},
+c0(){return A.b([new A.ab("Pristine Peaks")],t.E)},
 aZ(a){var s,r,q,p,o,n,m=A.b([],t.M)
 for(s=0;s<3;++s){r=B.rl[s]
 for(q=A.adg(4,0),p=q.length,o=r+" ",n=0;n<q.length;q.length===p||(0,A.I)(q),++n)m.push(new A.a(o+q[n],"",r,null,null))}m.push(B.a6W)
@@ -56781,13 +56788,6 @@ m.push(B.a4X)
 m.push(B.apK)
 m.push(B.apR)
 m.push(B.a4c)
-m.push(B.avd)
-m.push(B.ave)
-m.push(B.a1M)
-m.push(B.apI)
-m.push(B.abP)
-m.push(B.a4o)
-m.push(B.agZ)
 m.push(B.akr)
 m.push(B.anu)
 m.push(B.ac3)
@@ -56798,7 +56798,7 @@ m.push(B.a0_)
 m.push(B.agg)
 m.push(B.a9s)
 return m},
-bc(){return A.b([B.Qx,B.Qq,B.Op,B.Ro,B.Pd,B.PY,B.RU,B.Pb,B.Qf],t.c)}}
+bc(){return A.b([B.Qx,B.Qq,B.Op,B.Ro,B.Pd,B.PY,B.RU],t.c)}}
 A.S6.prototype={
 aS(){return new A.aN("Cascadia Rolling",4,0,null,1,10,1,0,"Player Count",0,0)},
 c0(){return A.b([new A.ab("Rolling Hills"),new A.ab("Rolling Hills: Summits"),new A.ab("Rolling Rivers"),new A.ab("Rolling Rivers: Forces of Nature")],t.E)},
@@ -121556,7 +121556,7 @@ B.P7=new A.J("Private Building Tiles","0DA2E7",1,10,0,0)
 B.P8=new A.J("Private Building Tiles","0DA2E7",4,10,0,0)
 B.P9=new A.J("Private Building Tiles","0DA2E7",1,12,0,0)
 B.Pa=new A.J("n\xb03","f5cffa",3,null,0,0)
-B.Pb=new A.J("Scoring Card","65BA16",8,null,0,0)
+B.Pb=new A.J("Scoring Card","65BA16",11,1,0,0)
 B.Pc=new A.J("2","F3EF0D",2,1,0,0)
 B.Pd=new A.J("Wildlife","825509",5,null,0,0)
 B.Pe=new A.J("Map - Le Havre","D2B48C",1,1,0,0)
@@ -121623,7 +121623,7 @@ B.Qb=new A.J("African death\u2019s head hawkmoth","36454F",0,null,0,0)
 B.Qc=new A.J("African death\u2019s head hawkmoth","36454F",4,null,0,0)
 B.Qd=new A.J("Leaf Frog","58ed22",6,null,0,0)
 B.Qe=new A.J("Automatons","eb34b7",2,1,0,0)
-B.Qf=new A.J("Alpine Animals Wildlife","5C3C0B",9,3,0,0)
+B.Qf=new A.J("Alpine Animals Wildlife","5C3C0B",12,3,0,0)
 B.Qg=new A.J("Character","CEC91C",0,7,0,0)
 B.Qh=new A.J("Rule","088F8F",1,1,0,0)
 B.Qi=new A.J("10","66029e",10,null,0,0)
